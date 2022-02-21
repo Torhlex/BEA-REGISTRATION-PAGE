@@ -1,0 +1,166 @@
+body {
+  background-color: rgb(239, 245, 247);
+  /* display: grid; */
+}
+
+/* .BfreeLogo {
+  background-color: skyblue;
+  width: auto;
+  height: 70px;
+  display: flexbox;
+} */
+
+.Text {
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 30vh; */
+
+}
+
+.formArea  {
+font-family: 'Lato', sans-serif;
+  color: #252323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 50vh; */
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* .Parent {
+  display: flex;
+  background-color: skyblue;
+width: auto;
+height: auto;
+}  */
+
+form {
+  width: 350px;
+  position: relative;
+}
+
+form .form-field::before {
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+  top: 17px;
+  color: #888888;
+  content: " ";
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+form .form-field:nth-child(1)::before {
+  background-image: url(img/staffID.jpg);
+  width: 30px;
+  height: 30px;
+  top: 10px;
+}
+form .form-field:nth-child(2)::before {
+  background-image: url(img/profile.jpg);
+  width: 20px;
+  height: 20px;
+}
+
+form .form-field:nth-child(3)::before {
+  background-image: url(img/email.png);
+  width: 25px;
+  height: 25px;
+  top: 10px;
+
+}
+
+form .form-field:nth-child(4)::before {
+  background-image: url(img/designation.png);
+  width: 18px;
+  height: 18px;
+}
+
+form .form-field:nth-child(5)::before {
+  background-image: url(img/lock-icon.png);
+  width: 25px;
+  height: 25px;
+  top: 12px;
+
+}
+
+form .form-field:nth-child(6)::before {
+  background-image: url(img/lock-icon.png);
+  width: 25px;
+  height: 25px;
+  top: 12px;
+}
+
+form .form-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative;
+}
+form input {
+  font-family: inherit;
+  width: 100%;
+  outline: none;
+  border:none;
+  border-color: skyblue;
+  background-color: #fff;
+  border-radius: 15px;
+  display: block;
+  padding: 15px 25px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 15px;
+  color: #4A4A4A;
+  text-indent: 30px;
+}
+
+form .btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.9rem 2.5rem;
+  text-align: center;
+  background-color: rgb(73, 169, 207);
+  color: rgb(255, 255, 255);
+  border-radius: 12px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 16px;
+}
+
+form .Reg {
+  display: inline-block;
+  /* justify-content: center; */
+  width: 250px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  color: rgb(55, 55, 56);
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-style: hidden;
+  /* border-color: skyblue; */
+  font-size: 15px;
+}
+
+ form .FP {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  color: rgb(50, 50, 51);
+  cursor: pointer;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 5px;
+  border-radius: 8px;
+  border-style: hidden;
+  /* border-color: skyblue; */
+  font-size: 15px;
+}
